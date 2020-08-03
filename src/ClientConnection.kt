@@ -8,9 +8,9 @@ import java.util.concurrent.ConcurrentHashMap
 class ClientConnection(val instanceKey: String) {
 //    val instanceKey = "${System.currentTimeMillis()}"
 
-    val memberLeft = "left"
-    val memberJoined = "joined"
-    val messageOpcode = "message"
+    val memberLeft = "l"
+    val memberJoined = "j"
+    val messageOpcode = "m"
 
     val socketSessions = ConcurrentHashMap<String, WebSocketSession>()
     val lastMessages = LinkedList<String>()
